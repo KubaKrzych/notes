@@ -1,0 +1,11 @@
+cryptography==39.0.1
+Django==4.2.7
+pyotp==2.9.0
+django-crispy-forms
+pyotp
+django-axes
+crispy-bootstrap4
+gunicorn
+markdown
+bleach
+django-cors-headers
