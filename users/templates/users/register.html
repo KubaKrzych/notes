@@ -1,0 +1,16 @@
+{% extends "note/base.html" %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+<form method="POST" >
+    {% csrf_token %}
+    {{ form | crispy }}
+
+    <div class='mt-3'>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+
+</form>
+
+
+{% endblock content %}
