@@ -17,6 +17,16 @@ services:
       - static:/static
     depends_on:
       - app
+  postgres:
+    image: postgres
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    ports:
+      - "5432:5432"
+    volumes: 
+          - ./postgres-data:/var/lib/postgresql/data
+    
 
 volumes:
   static:

@@ -9,3 +9,4 @@ gunicorn
 markdown
 bleach
 django-cors-headers
+psycopg2
